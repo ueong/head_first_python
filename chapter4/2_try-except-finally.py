@@ -20,6 +20,7 @@ try:
 except IOError as err:
 	print('File error : ' + str(err))
 
+
 try:
 	manfile = open('man_data.txt','w')
 	otherfile = open('other_data.txt','w')

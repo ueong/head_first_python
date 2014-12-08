@@ -3,6 +3,7 @@ import os
 man = []
 other = []
 try:
+	# with open('missing.txt') as data:
 	with open('sketch.txt') as data:
 		for each_line in data:
 			try:
@@ -23,3 +24,10 @@ try:
 		print(other, file=otherfile)
 except IOError as err:
 	print('Write file error : ' + str(err))
+
+with open('man_data.txt') as mdf:
+	print(mdf.readline())
+
+with open('other_data.txt') as odf:
+	print(odf.readline())
+
